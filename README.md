@@ -1,70 +1,92 @@
-Ballers' Hospital App
+# Ballers' Hospital App
+
 A command-line interface (CLI) for a hospital management system built with Python and SQLite. This application allows users to manage patient details, book appointments, and interact with doctor and payment data.
 
-Table of Contents
-Features
+---
 
-Getting Started
+## Table of Contents
 
-Prerequisites
+- [Features](#features)
+- [Getting Started](#getting-started)
+  - [Prerequisites](#prerequisites)
+  - [Installation](#installation)
+  - [Usage](#usage)
+- [Project Structure](#project-structure)
+- [License](#license)
 
-Installation
+---
 
-Usage
+## Features
 
-Project Structure
+- **User Authentication:**  
+  Log in and create new user accounts by providing personal details.
 
-License
+- **Appointment Booking:**  
+  Choose a consultation with either a General Practitioner or a Specialist.
 
-Features
-User Authentication: Log in and create new user accounts by providing personal details.
+- **Flexible Payments:**  
+  Select from various payment options, including Cash or a list of Insurance providers.
 
-Appointment Booking: Choose a consultation with either a General Practitioner or a Specialist.
+- **Doctor Management:**  
+  An admin panel allows you to view existing doctors and add new ones.
 
-Flexible Payments: Select from various payment options, including Cash or a list of Insurance providers.
+- **Medical Reports:**  
+  Users can easily view their medical reports provided by a doctor.
 
-Doctor Management: An admin panel allows you to view existing doctors and add new ones.
+---
 
-Medical Reports: Users can easily view their medical reports provided by a doctor.
+## Getting Started
 
-Getting Started
 Follow these steps to set up and run the application on your local machine.
 
-Prerequisites
-You will need Python 3.x and pip installed.
+### Prerequisites
 
-Installation
-Clone the repository:
+- Python 3.x
+- pip
 
-git clone [https://github.com/allan6757/Hospitali.git](https://github.com/allan6757/Hospitali.git)
-cd Hospitali
+### Installation
 
-Set up a virtual environment (recommended):
+1. **Clone the repository:**
+    ```sh
+    git clone https://github.com/allan6757/Hospitali.git
+    cd Hospitali
+    ```
 
-python3 -m venv venv
-source venv/bin/activate
+2. **Set up a virtual environment (recommended):**
+    ```sh
+    python3 -m venv venv
+    source venv/bin/activate
+    ```
 
-Run the seeding script to create the database and populate it with sample data:
+3. **Run the seeding script to create the database and populate it with sample data:**
+    ```sh
+    python3 seed.py
+    ```
 
-python3 seed.py
+---
 
-Usage
+## Usage
+
 To start the application, make sure your virtual environment is active and execute the main CLI script as a module:
 
+```sh
 python3 -m lib.cli
+```
 
 Follow the on-screen prompts to navigate the menu and use the application's features.
 
-Project Structure
-lib/cli.py: The main command-line interface file.
+---
 
-lib/models.py: The Object-Relational Mapping (ORM) and database models.
+## Project Structure
 
-seed.py: A script to seed the database with initial data.
+- `lib/cli.py`: The main command-line interface file.
+- `lib/models.py`: The Object-Relational Mapping (ORM) and database models.
+- `seed.py`: A script to seed the database with initial data.
+- `README.md`: Project documentation.
+- `LICENSE.md`: The MIT License for this project.
 
-README.md: Project documentation.
+---
 
-LICENSE.md: The MIT License for this project.
+## License
 
-License
-This project is licensed under the MIT License. See the LICENSE.md file for more details.
+This project is licensed under the MIT License. See the [LICENSE.md](LICENSE.md) file for more details.
